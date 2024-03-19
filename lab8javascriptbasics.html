@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8: JavaScript Basics</title>
+    </head>
+
+    <body>
+        <p id="demo"></p>
+        <script>
+        // 1. Variable Declaration and Math operations
+        let num1 = 10;
+        let num2 = 5;
+        document.getElementById("demo").innerHTML = "Value of num1 is: " + num1 + " & the value of num2 is: " + num2;
+        console.log("Addition:", num1 + num2);
+        console.log("Subtraction:", num1 - num2);
+        console.log("Multiplication:", num1 * num2);
+        console.log("Division:", num1 / num2);
+
+        //2. String manipulation and Concatenation
+        let firstName = "Katelynn";
+        let lastName = "Caceres";
+        let fullName = firstName + " " + lastName;
+        console.log("Full Name:", fullName);
+
+        //3. Using “let” and “var” to declare Variables
+        let x = 5;
+        var y = 10;
+        console.log("x:", x);
+        console.log("y:", y);
+
+        // Reassign x and y within the same scope
+        x = 8;
+        y = 15;
+        console.log("Reassigned x:", x);
+        console.log("Reassigned y:", y);
+
+        //4. Increment and Decrement Operators
+        let counter = 0;
+        counter++;
+        counter++;
+        counter++;
+        counter++;
+        counter++;
+        console.log("final value of the counter:", counter)
+
+        //5. Type Conversion and Coercion
+        //a. Write a program that prompts the user to enter two numbers as strings. Convert thestrings to numbers and calculate their sum. Print the result.
+        let numStr1 = prompt("Enter the first number:");
+        let numStr2 = prompt("Enter the second number:");
+        let firstnum = parseFloat(numStr1);
+        let secondnum = parseFloat(numStr2);
+        let sum = firstnum + secondnum;
+        console.log("Sum of the numbers:", sum);
+        //b. Given a number, convert it to a string and add " years old" to it. Print the resulting string
+        let age = prompt("Enter age");
+        let ageString = age.toString() + " years old";
+        console.log(ageString);
+        </script>
+    </body>
+</html>

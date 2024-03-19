@@ -12,9 +12,9 @@
         // 1. Variable Declaration and Math operations
         let num1 = 10;
         let num2 = 5;
-        document.getElementById("demo").innerHTML = "Value of num1 is: " + num1 + " & the value of num2 is: " + num2;
+        document.getElementById("demo").innerHTML = "In question 1 Value of num1 is: " + num1 + " & the value of num2 is: " + num2;
         console.log("Addition:", num1 + num2);
-        console.log("Subtraction:", num1 - num2);
+        console.log("Subtraction:", num1 - num2)
         console.log("Multiplication:", num1 * num2);
         console.log("Division:", num1 / num2);
 
@@ -29,7 +29,8 @@
         var y = 10;
         console.log("x:", x);
         console.log("y:", y);
-
+        // let has block level scope, var has global scope
+        
         // Reassign x and y within the same scope
         x = 8;
         y = 15;
@@ -37,7 +38,7 @@
         console.log("Reassigned y:", y);
 
         //4. Increment and Decrement Operators
-        let counter = 0;
+        let counter = 0; //initialize
         counter++;
         counter++;
         counter++;
@@ -49,14 +50,14 @@
         //a. Write a program that prompts the user to enter two numbers as strings. Convert thestrings to numbers and calculate their sum. Print the result.
         let numStr1 = prompt("Enter the first number:");
         let numStr2 = prompt("Enter the second number:");
-        let firstnum = parseFloat(numStr1);
+        let firstnum = parseFloat(numStr1);//this converts the strings to actual numbers
         let secondnum = parseFloat(numStr2);
         let sum = firstnum + secondnum;
-        console.log("Sum of the numbers:", sum);
+        console.log("Sum of the numbers:", sum); // 
         //b. Given a number, convert it to a string and add " years old" to it. Print the resulting string
         let age = prompt("Enter age");
-        let ageString = age.toString() + " years old";
-        console.log(ageString);
+        let ageString = age.toString() + " years old"; //adds the "years old"
+        console.log(ageString); //prints ageString
         </script>
     </body>
 </html>
